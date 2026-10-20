@@ -1,0 +1,102 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, "PMingLiU", "新細明體", "Noto Serif CJK TC", serif;
+  font-size: 13px;
+  color: #000;
+  background: #fff url("assets/background-tile.svg") repeat;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 960px; min-height: 919px; }
+a { color: #00f; text-decoration: underline; }
+a:visited { color: #00f; }
+a:hover { color: #f00; }
+button, input, textarea { font-family: Arial, "PMingLiU", "新細明體", "Noto Serif CJK TC", serif; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+button:focus-visible, a:focus-visible, textarea:focus-visible, input:focus-visible { outline: 2px dotted navy; outline-offset: 2px; }
+.visitor-counter { height: 50px; padding-top: 8px; display: flex; align-items: flex-start; justify-content: center; gap: 2px; color: #00f; background: #fff url("assets/background-tile.svg") repeat; font-family: "PMingLiU", "新細明體", "Noto Serif CJK TC", serif; font-size: 16px; line-height: 24px; white-space: nowrap; }
+.counter-digits { display: inline-block; background: #000; color: #fff; font: 24px/21px "Courier New", monospace; letter-spacing: 1px; height: 21px; }
+.sidebar { position: absolute; top: 50px; left: 0; width: 140px; min-height: max(869px, calc(100vh - 50px)); padding-top: 6px; background: #fff url("assets/background-tile.svg") repeat; text-align: center; font-size: 13px; }
+.brand { display: block; width: 88px; height: 31px; margin: 0 auto 21px; }
+.brand img { display: block; }
+.clock-label { color: #00f; margin-bottom: 16px; line-height: 16px; }
+.clock { display: block; width: 91px; height: 22px; margin: 0 0 17px 20px; padding: 1px 3px; border: 1px solid #888; border-radius: 2px; background: #fff; color: #000; font-size: 12px; }
+.sidebar nav a { display: block; width: max-content; max-width: 138px; margin: 0 auto 19px; line-height: 15px; }
+#content { margin: 0 8px 0 140px; padding-top: 6px; min-height: max(869px, calc(100vh - 50px)); background: #fff url("assets/background-tile.svg") repeat; text-align: center; }
+#content:focus { outline: none; }
+.page { margin: 0 auto; }
+.page-title { display: block; margin: 0 auto; object-fit: contain; }
+.earth { display: block; width: 34px; height: 34px; margin: 17px auto 0; }
+.latest { position: absolute; top: max(850px, calc(100vh - 69px)); left: 140px; width: 54px; height: 24px; background: #467ec2; color: #ff0 !important; text-decoration: none; text-align: center; font: 12px/14px "PMingLiU", "Noto Serif CJK TC", serif; letter-spacing: 2px; }
+.latest small { display: block; background: #8ca9d3; color: #fff; font: 10px/10px "Times New Roman", serif; letter-spacing: 0; }
+.home-welcome { width: 320px; height: 100px; margin: 30px auto 14px; }
+.home-rule { width: 810px; max-width: 88%; height: 2px; margin: 0 auto; border: 0; border-top: 1px solid #2773d5; border-bottom: 1px solid #ddd; }
+.welcome-strip { width: 406px; height: 25px; margin: 23px auto 0; padding: 1px 2px; border: 3px ridge #00f; background: #06f; color: #fff; overflow: hidden; text-align: left; white-space: nowrap; line-height: 17px; }
+.welcome-strip span { display: inline-block; min-width: 100%; animation: welcome-scroll 14s linear infinite; }
+@keyframes welcome-scroll { from { transform: translateX(100%); } to { transform: translateX(-100%); } }
+.votes { margin-top: 18px; }
+.votes button { padding: 2px 6px; min-height: 23px; font-size: 13px; }
+.resource-note { margin: 16px 0 0; color: #f00; font-size: 12px; line-height: 15px; }
+.logo-table { border-collapse: collapse; width: 560px; margin: 16px auto 0; color: #00f; }
+.logo-table th { padding: 0; height: 18px; line-height: 16px; background: #06f; color: #fff; font-size: 13px; font-weight: normal; }
+.logo-table th:first-child { width: 106px; letter-spacing: 4px; }
+.logo-table td { vertical-align: top; padding: 0; }
+.logo-table img { margin-top: 3px; }
+.logo-code { display: block; width: 454px; height: 68px; padding: 3px; font: 14px/20px "Courier New", monospace; color: #000; background: #fff; border: 1px solid #888; border-radius: 3px; resize: both; }
+.update-log { display: block; width: 476px; height: 269px; margin: 34px auto 0; padding: 4px; background: #fff; border: 1px solid #888; border-radius: 3px; color: #000; font: 16px/20px "PMingLiU", "新細明體", "Noto Serif CJK TC", serif; text-align: left; resize: both; }
+.announcement { position: absolute; z-index: 10; left: 154px; top: 82px; width: 250px; height: 192px; border: 2px solid navy; background: #fff; color: #00f; text-align: left; font-size: 12px; }
+.announcement-bar { display: flex; align-items: center; justify-content: space-between; height: 46px; padding: 0 2px; background: navy; color: #fff; cursor: move; touch-action: none; user-select: none; }
+.announcement-close { flex: 0 0 15px; width: 15px; height: 15px; padding: 0; color: #000; background: #c0c0c0; border: 2px outset #eee; font: 11px/10px Arial, sans-serif; }
+.announcement-body { padding: 5px 4px; line-height: 18px; }
+.games-page .page-title { width: 400px; height: 70px; margin-bottom: 26px; }
+.game-table { table-layout: fixed; border-collapse: collapse; width: 522px; margin: 0 auto; background: #fff; font-size: 12px; line-height: 16px; }
+.game-table th, .game-table td { border: 1px solid #000; padding: 0 2px; font-weight: normal; }
+.game-table th { background: #39f; height: 19px; color: #000; }
+.game-table th:first-child { width: 194px; }
+.game-table th:nth-child(2) { width: 64px; }
+.game-table tbody tr { height: 18.25px; }
+.game-table td:nth-child(2) { text-align: left; white-space: nowrap; }
+.game-table tbody tr:nth-last-child(2) { height: 46px; }
+.game-table tbody tr:last-child { height: 55px; }
+.game-table .game-notes { overflow-wrap: anywhere; }
+.game-notes span, .game-notes a { display: inline; }
+.game-notes .note-line { display: block; }
+.gold { color: #eab600; }
+.red { color: #f00; }
+.green { color: #00c600; }
+.games-page .earth { margin-top: 50px; }
+.missing-banner { width: 400px; height: 70px; margin: 0 auto 16px; border: 1px solid #aaa; text-align: left; color: #999; }
+.missing-banner span { display: inline-block; margin: 2px; width: 12px; height: 12px; border: 1px solid #aaa; font: 10px/10px sans-serif; }
+.profile-table { width: 71.1%; margin: 0 auto; border-collapse: collapse; table-layout: fixed; color: #00f; font-size: 13px; }
+.profile-table td { border: 1px solid #222; padding: 0; height: 19.5px; line-height: 18px; }
+.profile-table td:first-child { width: 34%; text-align: left; }
+.profile-table .photo-row td { height: 152px; }
+.photo-placeholder { width: 128px; height: 128px; margin: 11px 0; display: grid; place-items: center; border: 1px dashed #aaa; background: #fff; color: #777; font-size: 12px; }
+.music-page .page-title { width: 230px; height: 70px; margin-bottom: 40px; }
+.music-recommendations { margin: 0; line-height: 20px; font-family: "PMingLiU", "新細明體", "Noto Serif CJK TC", serif; font-size: 16px; }
+.new { font: 11px/1 monospace; color: #f50; letter-spacing: 1px; }
+.music-description { color: #00f; margin: 22px 0 0; line-height: 17px; }
+.music-notice { color: #f00; margin: 16px 0 0; line-height: 17px; }
+.music-table, .links-table { border: 1px solid #f40; border-spacing: 1px; background: #ffffce; text-align: left; color: #0099ff; font-size: 13px; line-height: 17px; }
+.music-table { width: 75.85%; margin: 20px auto 0; }
+.music-table td, .links-table td, .links-table th { border: 1px solid #f40; height: 22px; padding: 0 2px; font-weight: normal; }
+.music-table td { height: 23px; }
+.music-table td:first-child { width: 76%; }
+.links-page .page-title { width: 230px; height: 115px; margin-bottom: 17px; }
+.links-description { color: #00f; margin: 0; line-height: 16px; }
+.links-table { width: 81.94%; margin: 17px auto 0; }
+.links-table td, .links-table th { height: 23.5px; }
+.links-table th:first-child { width: 31%; }
+.links-table a { color: #0099ff; }
+.links-table .new { color: #f30; }
+.recommended { color: #f00; margin-left: 18px; }
+.guestbook-page { width: 82%; max-width: 1200px; }
+.guestbook-page h1 { margin: 12px auto 24px; color: #00548b; font-family: "DFKai-SB", "標楷體", "Noto Serif CJK TC", serif; font-size: 38px; font-weight: normal; }
+.guestbook-actions { margin: 0 auto 18px; color: #00f; line-height: 1.8; }
+.guestbook-actions p { margin: 8px 0; }
+.guestbook-open { display: inline-block; padding: 3px 12px; border: 2px outset #eee; background: #ddd; color: #000 !important; text-decoration: none; }
+.guestbook-frame { display: block; width: 100%; height: 620px; border: 1px solid #888; background: #fff; }
+.guestbook-fallback { color: #00f; margin: 10px 0 0; line-height: 1.8; }
+.noscript { margin-left: 160px; }
+@media (max-width: 1100px) { .music-table { width: 88%; } .links-table { width: 92%; } .profile-table { width: 85%; } }
+@media (prefers-reduced-motion: reduce) { .welcome-strip span { animation: none; } }
